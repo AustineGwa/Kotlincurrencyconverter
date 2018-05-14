@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kotlin currency converter</string>
+    <string name="currency_mssg">convert any amount to kenyan shilling</string>
+
+    <string-array name="currencies">
+        <item> choose your  currency </item>
+        <item>dollar</item>
+        <item>Euro</item>
+        <item>SA_rand</item>
+
+
+    </string-array>
+</resources>

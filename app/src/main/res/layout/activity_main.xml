@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#075a49"
+    tools:context="com.austinegwa64.kotlincurrencyconverter.MainActivity">
+
+    <TextView
+        android:id="@+id/pagetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="54dp"
+        android:text="@string/currency_mssg" />
+
+    <EditText
+        android:id="@+id/foreignAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pagetitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="Amount of currency"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/foreignAmount"
+        android:layout_marginTop="61dp"
+        android:entries="@array/currencies"/>
+
+    <Button
+        android:id="@+id/convertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="convert now" />
+
+    <TextView
+        android:id="@+id/result"
+        android:textColor="#fb0b2d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convertbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+</RelativeLayout>
